@@ -36,7 +36,9 @@ const Space = ({ space, display, windows, SIPDisabled, focusedSpace, displayId }
     (app) => app.space === index && (app['native-fullscreen'] === 1 || !EXCLUSIONS.includes(app.app))
   )
 
-  const spaceLabel = label && label !== '' ? label : index
+  // const spaceLabel = label && label !== '' ? label : index
+  // Always use index as label instead of the hacked label we use :D
+  const spaceLabel = index
 
   return (
     <div className={classes} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
