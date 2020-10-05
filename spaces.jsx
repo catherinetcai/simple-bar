@@ -5,7 +5,7 @@ import { parseJson } from './lib/utils.js'
 
 import { Theme } from './lib/styles/Theme.js'
 
-const refreshFrequency = false
+const refreshFrequency = 10000
 
 const className = /* css */ `
   .simple-bar__error,
